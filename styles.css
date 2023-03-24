@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: 'Audiowide', cursive;
+    height: 100vh;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    color: #E5E7EB;
+    background-color: #1F2937;
+    text-align: center;
+}
+
+#sketch {
+    background-color: #31496b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1; 
+}
+
+.slidecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+    width: 600px;
+}
+
+.text {
+    font-size: 24px;
+    color: white;
+    transition: all .50s ease;
+    flex: 1 0 200px;
+}
+
+.grow {
+    transform: scale(1.1);
+    color: #ffc600;
+    border-color: #ffc600;
+    text-shadow: 0 0 1rem #ffc600;
+}
+
+.apply{
+    font-family: 'Audiowide', cursive;
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .20s ease;
+    width: 20rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+    flex: 1 1 auto;
+}
+
+.apply:hover {
+    transform: scale(1.1);
+    color: #ffc600;
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 300px; /* Full-width */
+    height: 20px; /* Specified height */
+    border: 0.4rem solid black;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.4);
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: all .20s ease-in-out;
+    flex: 1 0 auto;
+}
+
+.slider:hover {
+    transform: scale(1.1);
+    border: 0.4rem solid black;
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 40px; /* Set a specific slider handle width */
+  height: 40px; /* Slider handle height */
+  border-radius: 50%;
+  background: white; /* Green background */
+  transition: all .50s ease-in-out;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+    border: 1.25rem solid black;
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+.grid {
+    background-color: #1F2937;
+    width: 800px;
+    height: 800px;
+    padding: 16px;
+    display: flex;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.row {
+    margin: 1px;
+    background: gold;
+    text-align: center;
+    flex: 1;
+}
+.footer {
+    color: #E5E7EB;
+    background-color: #1F2937;
+    padding: 16px;
+    text-align: center;
+}
+
+
